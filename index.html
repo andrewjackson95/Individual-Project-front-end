@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <img src="./images/mainBackground3.jpg" style="position:fixed; height:100%; width:100%" />
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.jpg" width="30" height="30" alt="">
+            Home
+        </a>
+        <form class="form-inline" onsubmit="search(searchBar.value); return false;">
+            <input type="text" class="form-control mr-sm-2" placeholder="Search for a user" aria-label="Search" aria-describedby="button-addon2"
+                id="searchBar">
+            <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="main">
+        <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href = './allPosts.html'">
+                View all posts</button>
+        <div id="cardcolour" class="card" style="width: 18rem">
+            <div class="main2">
+                <h1>Home Page</h1>
+                <h2>Login</h2>
+                <h3>Username</h3>
+                <div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon2" id="userName">
+                </div>
+                <h3>Password</h3>
+                <div>
+                    <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon2"
+                        id="userPassword">
+                </div>
+                <div id="space">
+
+                </div>
+                <div sytle="margin-top: 15 px">
+                    <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href = './userPage.html'">
+                Login</button>
+                    <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href = './register.html'">
+                Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+<script src="./index.js"></script>
+</body>

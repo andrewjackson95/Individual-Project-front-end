@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Logged In</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <img src="./images/mainBackground3.jpg" style="position:fixed; height:100%; width:100%" />
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.jpg" width="30" height="30" alt="">
+            Home
+        </a>
+        <form class="form-inline" onsubmit="search(searchBar.value); return false;">
+            <input type="text" class="form-control mr-sm-2" placeholder="Search for a user" aria-label="Search" aria-describedby="button-addon2"
+                id="searchBar">
+            <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="main">
+        <div id="cardcolour" class="card" style="width: 18rem">
+            <div class="main2">
+                <h1>Update post by id number:</h1>
+                <div>
+                    <input class="form-control" id="blogid" aria-describedby="basic-addon2" placeholder="Blog id">
+                </div>
+                <h2>Title</h2>
+                <div>
+                    <input class="form-control" id="title2" aria-describedby="basic-addon2" placeholder="Blog Title">
+                </div>
+                <h3>Description</h3>
+                <div>
+                    <input class="form-control" id="description" aria-describedby="basic-addon2" placeholder="Blog Description">
+                </div>
+                <h3>Article</h3>
+                <div>
+                    <input class="form-control" id="article" aria-describedby="basic-addon2" placeholder="Blog Article">
+                </div>
+                <div id="space">
+
+                </div>
+                <div sytle="margin-top: 15 px">
+                    <button class="btn btn-primary btn-lg" onclick="updatePost(blogid.value, title2.value, description.value, article.value)">Update blog</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+    <script src="updateBlog.js"></script>
+</body>

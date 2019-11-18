@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>All Posts</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+</head>
+
+<body onload="findUser()">
+    <img src="./images/mainBackground3.jpg" style="position:fixed; height:100%; width:100%" />
+    <nav class="navbar navbar-dark bg-primary" style="position:fixed; width:100%">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./images/logo.jpg" width="30" height="30" alt="">
+            Home
+        </a>
+        <h2 style="color:white; font-size: 1.5vw;">
+            Viewing all posts
+        </h2>
+        <div sytle="margin-top: 15 px">
+            <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href = './index.html'">
+                Logout</button>
+        </div>
+        <form class="form-inline" onsubmit="search(searchBar.value); return false;">
+            <input type="text" class="form-control mr-sm-2" placeholder="Search for a user" aria-label="Search" aria-describedby="button-addon2"
+                id="searchBar">
+            <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        </form>
+    </nav>
+    <div>
+        <div>
+            <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='./index.html'">Return to
+                homepage</button>
+        </div>
+    </div>
+    <div id="userBlogArea2">
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="allPosts.js"></script>
+</body>
+
+</html>
