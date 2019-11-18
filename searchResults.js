@@ -62,6 +62,7 @@ function displayBlogs({ blogs }) {
         blogButton.href = "#";
         blogButton.addEventListener('click', () => {
             console.log('CLICKED BLOG', b.id);
+            location = './fullpost.html?fullPost=' + b.id;
         });
         blogBody.appendChild(blogButton);
 
